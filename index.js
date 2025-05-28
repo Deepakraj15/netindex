@@ -6,10 +6,10 @@ const { handleXMLHttpRequest } = require("./libs/xmlHttpRequest");
  * 
  * @param {Function} callback - Function to initiate network monitoring
  */
-function monitorNetwork(callback = console.log) {
+function monitorNetwork(callback = console.log,log=true) {
     try {
-        handleFetchRequests(callback);
-        handleXMLHttpRequest(callback);
+        handleFetchRequests(callback,log);
+        handleXMLHttpRequest(callback,log);
     } catch (e) {
         console.error("Error while setting up network monitoring:", e);
     }
