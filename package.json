@@ -1,0 +1,21 @@
+{
+  "name": "netindex",
+  "version": "1.0.0",
+  "description": "network monitoring api module that provides high flexibility over api calls that you make using axios, fetch, rtk-query, XMLHttpRequest,etc..",
+  "keywords": [
+    "network",
+    "network",
+    "monitoring",
+    "http",
+    "requests",
+    "REST"
+  ],
+  "license": "ISC",
+  "author": "DeepakrajK",
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
