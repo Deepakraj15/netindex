@@ -1,6 +1,6 @@
 const { addLog } = require('./logStore');
 
-function handleXMLHttpRequest(callback) {
+function handleXMLHttpRequest(callback,_log) {
   const _originalXHR = window.XMLHttpRequest;
   const _originalOpen = _originalXHR.prototype.open;
   const _originalSend = _originalXHR.prototype.send;
@@ -13,6 +13,7 @@ function handleXMLHttpRequest(callback) {
 
   _originalXHR.prototype.send = function (body) {
     this.addEventListener('load', function () {
+        if(_log){
       const log = {
         type: 'xhr',
         method: this._requestMethod,
@@ -24,6 +25,7 @@ function handleXMLHttpRequest(callback) {
 
       addLog(log);
       callback(log);
+      }
     });
 
     return _originalSend.apply(this, arguments);
