@@ -10,6 +10,14 @@
     "requests",
     "REST"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepakraj15/netindex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Deepakraj15/netindex/issues"
+  },
+  "homepage": "https://github.com/Deepakraj15/netindex#readme",
   "license": "ISC",
   "author": "DeepakrajK",
   "type": "commonjs",
