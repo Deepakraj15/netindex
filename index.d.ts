@@ -64,3 +64,14 @@ export function monitorNetwork(
   callback?: (log: NetworkLog) => void,
   log?: boolean
 ): void;
+
+/**
+ * React hook to monitor all network requests in components.
+ *
+ * @param callback - Called with each log entry.
+ * @param log - Whether to store the log internally (default: true).
+ */
+export function useNetworkMonitor(
+  callback?: (log: NetworkLog) => void,
+  log?: boolean
+): void;

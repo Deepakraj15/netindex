@@ -1,4 +1,5 @@
 const { handleFetchRequests } = require("./libs/fetch");
+const { useNetworkMonitor } = require("./libs/useNetworkMonitor");
 const { handleXMLHttpRequest } = require("./libs/xmlHttpRequest");
 
 /**
@@ -15,4 +16,7 @@ function monitorNetwork(callback = console.log,log=true) {
     }
 }
 
+function useNetIndex(){
+    useNetworkMonitor();
+}
 module.exports = { monitorNetwork };
