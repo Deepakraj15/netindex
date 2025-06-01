@@ -1,6 +1,6 @@
 {
   "name": "netindex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "network monitoring api module that provides high flexibility over api calls that you make using axios, fetch, rtk-query, XMLHttpRequest,etc..",
   "keywords": [
     "network",
