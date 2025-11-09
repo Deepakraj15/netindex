@@ -1,15 +1,8 @@
 {
   "name": "netindex",
-  "version": "1.0.3",
-  "description": "network monitoring api module that provides high flexibility over api calls that you make using axios, fetch, rtk-query, XMLHttpRequest,etc..",
-  "keywords": [
-    "network",
-    "network",
-    "monitoring",
-    "http",
-    "requests",
-    "REST"
-  ],
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for NetIndex client and server packages.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Deepakraj15/netindex.git"
@@ -18,12 +11,16 @@
     "url": "https://github.com/Deepakraj15/netindex/issues"
   },
   "homepage": "https://github.com/Deepakraj15/netindex#readme",
+  "author": "Deepakraj K",
   "license": "ISC",
-  "author": "DeepakrajK",
-  "type": "commonjs",
-  "main": "index.js",
-  "types": "./index.d.ts",
+  "workspaces": [
+  "client",
+  "server"
+],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "start:server": "npm --workspace @netindex/server run start",
+  "build:client": "npm --workspace @netindex/client run build",
+  "build:server": "npm --workspace @netindex/server run build"
+}
+
 }

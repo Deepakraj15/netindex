@@ -1,4 +1,4 @@
-const { addLog } = require('./logStore');
+import { addLog } from './logStore';
 
 function handleFetchRequests(callback,_log) {
   const _originalFetch = window.fetch;
@@ -21,4 +21,4 @@ function handleFetchRequests(callback,_log) {
   };
 }
 
-module.exports = { handleFetchRequests };
+export default { handleFetchRequests };

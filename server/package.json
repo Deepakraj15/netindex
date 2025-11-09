@@ -1,0 +1,36 @@
+{
+  "name": "@netindex/server",
+  "version": "1.0.1",
+  "description": "Server-side collector and Prometheus exporter for NetIndex client metrics.",
+  "main": "src/index.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0",
+    "prom-client": "^15.0.0"
+  },
+  "keywords": [
+    "metrics",
+    "prometheus",
+    "monitoring",
+    "express",
+    "network"
+  ],
+  "author": "Deepakraj K",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepakraj15/netindex.git",
+    "directory": "packages/server"
+  },
+  "bugs": {
+    "url": "https://github.com/Deepakraj15/netindex/issues"
+  },
+  "homepage": "https://github.com/Deepakraj15/netindex#readme",
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "tsc --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5"
+  }
+}

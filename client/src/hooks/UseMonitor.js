@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import { monitorNetwork } from "./libs"; // adjust the path as necessary
-
+import { monitorNetwork } from "./libs";
 /**
  * React hook to monitor all network requests made by fetch or XMLHttpRequest.
  * 

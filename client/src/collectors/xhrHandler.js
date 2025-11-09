@@ -1,4 +1,4 @@
-const { addLog } = require('./logStore');
+import { addLog } from './logStore';
 
 function handleXMLHttpRequest(callback,_log) {
   const _originalXHR = window.XMLHttpRequest;
@@ -32,4 +32,4 @@ function handleXMLHttpRequest(callback,_log) {
   };
 }
 
-module.exports = { handleXMLHttpRequest };
+export default { handleXMLHttpRequest };

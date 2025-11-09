@@ -1,0 +1,30 @@
+{
+  "name": "@netindex/client",
+  "version": "1.0.1",
+  "description": "Browser SDK for observing and collecting network metrics (fetch, XHR, WebSocket, etc.)",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "network",
+    "monitoring",
+    "metrics",
+    "browser",
+    "fetch",
+    "xhr",
+    "performance"
+  ],
+  "author": "Deepakraj K",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepakraj15/netindex.git",
+    "directory": "client"
+  },
+  "bugs": {
+    "url": "https://github.com/Deepakraj15/netindex/issues"
+  },
+  "homepage": "https://github.com/Deepakraj15/netindex/tree/main/client#readme",
+  "scripts": {
+    "build": "echo 'Add a bundler like Rollup or Vite later.'"
+  }
+}
